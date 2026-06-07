@@ -1,7 +1,7 @@
-# case1_ingestion.yaml - Sharma 2020 CCD osmotic pump CR tablet
+# case1_ingestion.yaml - Farooqi 2020 CCD osmotic pump CR tablet
 case_id: case1_tablet_ccd
-case_paper: Sharma N et al. 2020, Drug Design Development and Therapy
-doi: 10.2147/DDDT.S281992
+case_paper: Farooqi N et al. 2020, Drug Design Development and Therapy
+doi: 10.2147/DDDT.S278918
 pmc: PMC7705261
 xml_source: source/sharma_2020_dddt_pmc.xml
 

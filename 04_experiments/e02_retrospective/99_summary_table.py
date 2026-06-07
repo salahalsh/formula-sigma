@@ -14,12 +14,12 @@ def main():
 
     rows = [["case", "design_family", "n_runs", "best_R2", "key_finding"]]
 
-    # Case 1 Sharma
+    # Case 1 Farooqi
     p = base / "case1_sharma" / "case1_detail.json"
     if p.exists():
         d = json.loads(p.read_text())
         rows.append([
-            "case1 Sharma 2020", "CCD rotatable 3F", 19,
+            "case1 Farooqi 2020", "CCD rotatable 3F", 19,
             f"{max(v['R2'] for v in d.values() if isinstance(v, dict) and 'R2' in v):.4f}",
             "Refit recovers Y1-Y4 R^2 0.90-0.96; published main-effect equations diverge from data",
         ])

@@ -126,9 +126,9 @@ top4, bot4 = stage_box(
     y=5.0, header_h=0.55, body_h=1.6,
     header="4.  Inclusion in retrospective benchmark",
     body="4 primary picks (one per design slot):\n"
-         "  - Kotamarthy 2022 (CCD)  ->  SWAPPED to Sharma 2020\n"
+         "  - Kotamarthy 2022 (CCD)  ->  SWAPPED to Farooqi 2020\n"
          "       (Kotamarthy per-run data was figure-only;\n"
-         "        Sharma has both per-run table + polynomial T4)\n"
+         "        Farooqi has both per-run table + polynomial T4)\n"
          "  - Arif 2022 (D-optimal mixture-process, NLC)\n"
          "  - Boscolo 2023 (BBD, UDCA freeze-dried NS)\n"
          "  - Nemr 2022 (D-optimal categorical, ocular bilosomes)",
@@ -142,7 +142,7 @@ top5, bot5 = stage_box(
     y=2.4, header_h=0.55, body_h=1.0,
     header="5.  Final retrospective dataset",
     body="5 cases (4 primary + 1 supporting):\n"
-         "Sharma, Arif, Boscolo, Nemr +  Akhtar 2024 bilayer\n"
+         "Farooqi, Arif, Boscolo, Nemr +  Akhtar 2024 bilayer\n"
          "(supporting demonstration of coupled-design analysis)",
     header_fc=W["sky"])
 count_chip(2.65, "5", "cases analysed", fc="#B3E5FC")

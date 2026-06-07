@@ -1,5 +1,5 @@
 """Generate the 6 manuscript main figures in this file (publication-quality layout).
-PRISMA (Figure 4) and Sharma anomaly (Figure 6) live in their own builders.
+PRISMA (Figure 4) and Farooqi anomaly (Figure 6) live in their own builders.
 
 F1  Platform architecture (layered diagram)
 F2  Competitor feature comparison heatmap
@@ -103,7 +103,7 @@ def fig1_architecture():
 def fig2_competitor_heatmap():
     tools = ["FORMULA-Sigma", "Design-Expert", "JMP Pro", "Modde", "pyDOE3", "sklearn"]
     rows = [
-        ("Open source",                  [1, 0, 0, 0, 1, 1]),
+        ("Open source",                  [0, 0, 0, 0, 1, 1]),
         ("Web UI",                       [1, 0, 0, 0, 0, 0]),
         ("Programmatic API",             [1, 0.5, 0.5, 0, 1, 1]),
         ("8 design families",            [1, 1, 1, 1, 0.5, 0]),
@@ -116,7 +116,7 @@ def fig2_competitor_heatmap():
         ("NSGA-II Pareto",               [1, 0.5, 0.5, 0.5, 0, 0]),
         ("Robust optimisation",          [1, 0.5, 0.5, 1, 0, 0]),
         ("Reproducibility (scripts)",    [1, 0, 0, 0, 1, 1]),
-        ("Free / academic licence",      [1, 0.3, 0.3, 0, 1, 1]),
+        ("Free / academic licence",      [0, 0.3, 0.3, 0, 1, 1]),
     ]
     labels = [r[0] for r in rows]
     M = np.array([r[1] for r in rows])
@@ -208,7 +208,7 @@ def fig3_cross_tool():
 def fig4_case_panel():
     e02 = paths.RESULTS / "e02"
     cases = [
-        ("case1_sharma",  "Case 1: Sharma 2020 (CCD)", "case1_summary.csv"),
+        ("case1_sharma",  "Case 1: Farooqi 2020 (CCD)", "case1_summary.csv"),
         ("case2_arif",    "Case 2: Arif 2022 (D-opt mix-proc)", "case2_summary.csv"),
         ("case3_boscolo", "Case 3: Boscolo 2023 (BBD)", "case3_summary.csv"),
         ("case4_nemr",    "Case 4: Nemr 2022 (D-opt categorical)", "case4_summary.csv"),

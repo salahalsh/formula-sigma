@@ -1,4 +1,4 @@
-"""e02 case 1 - Sharma 2020 CCD osmotic pump CR tablet (REPRODUCTION).
+"""e02 case 1 - Farooqi 2020 CCD osmotic pump CR tablet (REPRODUCTION).
 
 Per the diagnostic in case1_diagnostic.md, the published Table 4 main-
 effect equations do NOT predict the published Table 1 response values
@@ -128,7 +128,7 @@ def main():
 
     # Also write a published-equations diagnostic (kept as evidence)
     diag = []
-    diag.append("# Sharma 2020 published-equation diagnostic")
+    diag.append("# Farooqi 2020 published-equation diagnostic")
     diag.append("")
     diag.append("The published Table 4 main-effect equations do NOT predict")
     diag.append("the published Table 1 response values. Diagnostic numbers:")
@@ -155,7 +155,7 @@ def main():
         extra={"n_responses": 4, "outlier_excluded": "F-19",
                "fit_form": "full quadratic"})
 
-    print("Sharma 2020 reproduction (full quadratic, F-19 excluded):")
+    print("Farooqi 2020 reproduction (full quadratic, F-19 excluded):")
     for r in rows:
         print("  ", "  ".join(str(c) for c in r))
     print(f"  -> {csv_path}")

@@ -1,6 +1,6 @@
 # 03_data/processed - per-case extracted CSVs
 
-Machine-readable extractions from the source PMC XMLs. Every case
+Machine-readable extractions from the source publications. Every case
 folder follows a consistent structure:
 
 ```
@@ -14,23 +14,16 @@ case<N>_<slug>/
   [case-specific extras]     coefficients, kinetics, ANOVA, stability
 ```
 
-## Live cases
+## Cases
 
-| Folder                          | Design family                        | Runs |
-|---------------------------------|--------------------------------------|------|
-| case1_tablet_ccd/               | rotatable CCD                        | 20   |
-| case1b_akhtar_bilayer/          | bilayer dual rotatable CCD           | 10+10|
-| case2_nanoparticle_mixture/     | D-optimal combined mixture-process   | 22   |
-| case3_lyophilization_bbd/       | Box-Behnken                          | 15   |
-| case4_optimization/             | D-optimal w/ categorical             | 22   |
+| Folder                      | Design family                      | Runs  |
+|-----------------------------|------------------------------------|-------|
+| case1_tablet_ccd/           | rotatable CCD                      | 20    |
+| case1b_akhtar_bilayer/      | bilayer dual rotatable CCD         | 10+10 |
+| case2_nanoparticle_mixture/ | D-optimal combined mixture-process | 22    |
+| case3_lyophilization_bbd/   | Box-Behnken                        | 15    |
+| case4_optimization/         | D-optimal w/ categorical           | 22    |
 
-All design + response CSVs are deterministic outputs of:
-- `D:\tmp\fx_build_case1_sharma.py`     (Sharma)
-- `D:\tmp\fx_build_case1b_akhtar.py`    (Akhtar 1b)
-- `D:\tmp\fx_build_case_packs.py`       (Arif, Boscolo, Nemr)
-
-## _audit/ - obsolete extractions kept for audit
-
-- `_audit/obsolete_picks/case1_kotamarthy/` - Kotamarthy CSVs built
-  before swap. Includes a `case1_responses.csv` with ranges + named
-  extreme runs that documents WHY full reproduction was infeasible.
+Each case folder's `case<N>_ingestion.yaml` records the source publication
+(PMC identifier and DOI) and the per-field provenance. See the repository
+`README.md` and `LICENSE-DATA.md` for the full citation list and licensing.

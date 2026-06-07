@@ -1,4 +1,4 @@
-# Sharma 2020 published-equation diagnostic
+# Farooqi 2020 published-equation diagnostic
 
 The published Table 4 main-effect equations do NOT predict
 the published Table 1 response values. Diagnostic numbers:

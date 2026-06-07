@@ -2,7 +2,7 @@
 
 The five retrospective case datasets distributed with this repository (the
 cleaned per-run design and response CSVs, the factor/response definitions, and
-the ingestion YAML provenance files for the Sharma 2020, Akhtar 2024, Arif
+the ingestion YAML provenance files for the Farooqi 2020, Akhtar 2024, Arif
 2022, Boscolo 2023 and Nemr 2022 cases) are licensed under the
 
 **Creative Commons Attribution 4.0 International License (CC-BY-4.0)**
@@ -21,11 +21,11 @@ underlying numerical values were extracted. Those values are reproduced from
 the following publicly accessible PubMed Central records and remain subject to
 the rights of their original authors and publishers:
 
-- Case 1  - Sharma et al. 2020   - PMC7705261
+- Case 1  - Farooqi et al. 2020   - PMC7705261
 - Case 1b - Akhtar et al. 2024    - PMC10837631
-- Case 2  - Arif et al. 2022      - PMC9505712
-- Case 3  - Boscolo et al. 2023   - PMC10301437
-- Case 4  - Nemr et al. 2022      - PMC9559089
+- Case 2  - Arif et al. 2022      - PMC9695558
+- Case 3  - Boscolo et al. 2023   - PMC10458560
+- Case 4  - Nemr et al. 2022      - PMC9477486
 
 Anyone reusing these datasets should cite the original studies in addition to
 this repository.

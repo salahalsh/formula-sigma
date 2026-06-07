@@ -55,7 +55,7 @@ attribution requirements.
   e02_retrospective/  Reproduction of the five published case studies
   e03_synthetic/    Synthetic ground-truth benchmarks (BO, PDS, robust, Pareto)
   e04_reproducibility/  Hash-pinned outputs + verify_hashes.py + make_paper.sh
-  figures/          Builders for Figures 1-7, the Sharma anomaly figure, and the PRISMA figure
+  figures/          Builders for Figures 1-7, the Farooqi anomaly figure, and the PRISMA figure
   tests/            pytest smoke + unit tests
 05_results/         Hash-pinned reference outputs (CSV / JSON / regenerated figures)
 figures_static/     Figure 8, supplementary figures and graphical abstract (platform-rendered, static)
@@ -94,11 +94,11 @@ and `verify_hashes.py` fails if any artefact drifts.
 
 | Case | Study | PMC record |
 |------|-------|-----------|
-| 1  | Sharma et al. 2020 (osmotic-pump CR tablet, CCD)        | PMC7705261 |
+| 1  | Farooqi et al. 2020 (osmotic-pump CR tablet, CCD)        | PMC7705261 |
 | 1b | Akhtar et al. 2024 (bilayer SR+IR tablet)               | PMC10837631 |
-| 2  | Arif et al. 2022 (levosulpiride NLC, mixture-process)   | PMC9505712 |
-| 3  | Boscolo et al. 2023 (UDCA nanosuspension, BBD)          | PMC10301437 |
-| 4  | Nemr et al. 2022 (ocular bilosomes, categorical D-optimal) | PMC9559089 |
+| 2  | Arif et al. 2022 (levosulpiride NLC, mixture-process)   | PMC9695558 |
+| 3  | Boscolo et al. 2023 (UDCA nanosuspension, BBD)          | PMC10458560 |
+| 4  | Nemr et al. 2022 (ocular bilosomes, categorical D-optimal) | PMC9477486 |
 
 Please cite the original studies in addition to this repository when reusing the data.
 

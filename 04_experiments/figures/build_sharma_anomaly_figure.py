@@ -1,4 +1,4 @@
-"""Figure 6 - Sharma 2020 published-equation anomaly.
+"""Figure 6 - Farooqi 2020 published-equation anomaly.
 
 Compares predictions of three things for the same 19 design points:
   (a) Author's published Table 5 main-effect (Y1-Y3) and full quadratic (Y4)
@@ -126,7 +126,7 @@ handles, labels_ = axes[0].get_legend_handles_labels()
 fig.legend(handles, labels_, loc="upper center", ncol=3,
             fontsize=9, frameon=False, bbox_to_anchor=(0.5, 0.965))
 
-fig.suptitle("Figure 6. Sharma 2020 published equation vs FORMULA-Sigma refit "
+fig.suptitle("Figure 6. Farooqi 2020 published equation vs FORMULA-Sigma refit "
               "vs observed data  (n = 19)",
               fontsize=11.5, y=0.998)
 fig.subplots_adjust(left=0.05, right=0.98, top=0.83, bottom=0.13, wspace=0.32)

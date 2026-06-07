@@ -1,5 +1,5 @@
 case,design_family,n_runs,best_R2,key_finding
-case1 Sharma 2020,CCD rotatable 3F,19,0.9627,Refit recovers Y1-Y4 R^2 0.90-0.96; published main-effect equations diverge from data
+case1 Farooqi 2020,CCD rotatable 3F,19,0.9627,Refit recovers Y1-Y4 R^2 0.90-0.96; published main-effect equations diverge from data
 case1b Akhtar 2024,bilayer dual CCD 2F+2F,9+10,0.9919,"Bilayer coupled reproduction; matches published ANOVA (X1 sig, X2 not sig on TAM 30-min)"
 case2 Arif 2022,D-opt combined mix-process,22,0.9868,PS/PDI/EE R^2 within 5%; optimum prediction within 0.5% of published
 case3 Boscolo 2023,BBD 3F,15,0.9767,"Full quadratic R^2=0.98; X1+X3 significant, X2 (amp) matches published not-significant finding"
