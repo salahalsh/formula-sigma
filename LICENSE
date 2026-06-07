@@ -19,13 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-SCOPE NOTE
-
-This MIT license applies to the SOURCE CODE of the FORMULA-Sigma validation
-harness only (the contents of this 04_experiments/ tree, excluding the case
-datasets). The five retrospective case datasets are licensed separately under
-CC-BY-4.0; see LICENSE-DATA.md. The FORMULA-Sigma platform engine is
-proprietary and is NOT covered by this license or part of this release.
