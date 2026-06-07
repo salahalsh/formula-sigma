@@ -3,7 +3,7 @@
 Reproducibility package for the paper:
 
 > **FORMULA-Sigma: a unified web platform integrating classical DoE, mixture experiments, machine-learning surrogates, and probabilistic design space for pharmaceutical formulation.**
-> Salah Alshehade et al. (submitted to *International Journal of Pharmaceutics*).
+> Salah A. Alshehade, Iqbal H. Jebril, Mulham Alfatama, Maryam Nabavi Fard, Ahmad Naoras Bitar (submitted to *International Journal of Pharmaceutics*).
 
 This repository contains the **standalone validation harness** and the **five
 curated retrospective case datasets** used to validate FORMULA-Sigma. It lets
@@ -111,4 +111,4 @@ If you use this harness or the case datasets, please cite the paper (see
 
 FORMULA-Sigma is a proprietary web platform. This repository documents and
 validates it but does not distribute it. For access to the platform, contact the
-corresponding author.
+corresponding author (Mulham Alfatama, mulham@unisza.edu.my).

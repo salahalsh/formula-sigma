@@ -4,8 +4,21 @@ title: "FORMULA-Sigma validation harness and case datasets"
 type: software
 authors:
   - family-names: Alshehade
-    given-names: Salah
-    email: alshehade.s@gmail.com
+    given-names: "Salah A."
+    affiliation: "Department of Pharmacology, Faculty of Pharmacy, Universiti Sultan Zainal Abidin, Besut, Terengganu, Malaysia"
+  - family-names: Jebril
+    given-names: "Iqbal H."
+    affiliation: "Department of Mathematics, Al-Zaytoonah University of Jordan, Amman, Jordan"
+  - family-names: Alfatama
+    given-names: Mulham
+    email: mulham@unisza.edu.my
+    affiliation: "Department of Pharmaceutical Technology, Faculty of Pharmacy, Universiti Sultan Zainal Abidin, Besut, Terengganu, Malaysia"
+  - family-names: "Nabavi Fard"
+    given-names: Maryam
+    affiliation: "Department of Pharmaceutical Technology, Faculty of Pharmacy, Universiti Sultan Zainal Abidin, Besut, Terengganu, Malaysia"
+  - family-names: Bitar
+    given-names: "Ahmad Naoras"
+    affiliation: "Department of Clinical Pharmacy, Faculty of Pharmacy, Universiti Sultan Zainal Abidin, Besut, Terengganu, Malaysia"
 repository-code: "https://github.com/salahalsh/formula-sigma"
 license: MIT
 preferred-citation:
@@ -13,7 +26,15 @@ preferred-citation:
   title: "FORMULA-Sigma: a unified web platform integrating classical DoE, mixture experiments, machine-learning surrogates, and probabilistic design space for pharmaceutical formulation"
   authors:
     - family-names: Alshehade
-      given-names: Salah
+      given-names: "Salah A."
+    - family-names: Jebril
+      given-names: "Iqbal H."
+    - family-names: Alfatama
+      given-names: Mulham
+    - family-names: "Nabavi Fard"
+      given-names: Maryam
+    - family-names: Bitar
+      given-names: "Ahmad Naoras"
   journal: "International Journal of Pharmaceutics"
   year: 2026
   notes: "Under review. DOI to be added on publication."
