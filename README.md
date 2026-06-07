@@ -1,5 +1,7 @@
 # FORMULA-Sigma - validation harness and case datasets
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20577231.svg)](https://doi.org/10.5281/zenodo.20577231)
+
 Reproducibility package for the paper:
 
 > **FORMULA-Sigma: a unified web platform integrating classical DoE, mixture experiments, machine-learning surrogates, and probabilistic design space for pharmaceutical formulation.**
@@ -105,7 +107,7 @@ Please cite the original studies in addition to this repository when reusing the
 ## Citation
 
 If you use this harness or the case datasets, please cite the paper (see
-[`CITATION.cff`](CITATION.cff)). A Zenodo DOI will be added on release.
+[`CITATION.cff`](CITATION.cff)) and this archive: **Zenodo DOI [10.5281/zenodo.20577231](https://doi.org/10.5281/zenodo.20577231)** (concept DOI; version `paper-v1.0` = 10.5281/zenodo.20577232).
 
 ## The platform
 

@@ -20,6 +20,13 @@ authors:
     given-names: "Ahmad Naoras"
     affiliation: "Department of Clinical Pharmacy, Faculty of Pharmacy, Universiti Sultan Zainal Abidin, Besut, Terengganu, Malaysia"
 repository-code: "https://github.com/salahalsh/formula-sigma"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.20577231
+    description: "Concept DOI (all versions)"
+  - type: doi
+    value: 10.5281/zenodo.20577232
+    description: "Version DOI (paper-v1.0)"
 license: MIT
 preferred-citation:
   type: article
