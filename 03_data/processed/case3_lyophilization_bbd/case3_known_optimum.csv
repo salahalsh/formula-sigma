@@ -1,0 +1,8 @@
+parameter,value,source
+stabilizer_pct,0.3,T4 optimised
+amplitude_W,50,T4 optimised
+sonication_time_min,5,T4 optimised
+particle_size_nm,352.4,observed +/- 3.90
+pdi,0.11,observed +/- 0.001
+zeta_potential_mV,-4.30,observed +/- 0.20
+lyo_Sf_Si_with_maltose_minus80C,0.93,selected cryoprotectant

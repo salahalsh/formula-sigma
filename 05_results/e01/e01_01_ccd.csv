@@ -1,0 +1,13 @@
+metric,value
+design,CCD rotatable 3F
+n_runs_total,20
+n_center,6
+alpha_expected,1.681793
+alpha_observed_ref,1.681793
+alpha_observed_pyDOE3,1.681793
+design_matrices_equal_setwise,True
+fit_R2,0.99981263
+fit_RMSE,0.034068
+max_abs_coef_diff_sm_vs_numpy,1.7763568394002505e-15
+max_rel_coef_diff_sm_vs_numpy,4.951184007391969e-15
+agreement_threshold_1e-6,True

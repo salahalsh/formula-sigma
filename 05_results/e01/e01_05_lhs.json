@@ -1,0 +1,14 @@
+{
+  "design": "LHS N=50 K=4",
+  "stratum_correct_ours": true,
+  "stratum_correct_pyDOE3": true,
+  "range_ours": [
+    0.005818356762802373,
+    0.9955799270915626
+  ],
+  "range_pyDOE3": [
+    0.00749080237694725,
+    0.9979422051990515
+  ],
+  "passes": true
+}

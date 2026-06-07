@@ -1,0 +1,2 @@
+derived_column,formula,reason
+ea_amount_mg,total_mass / (1 + pc_ea_ratio),"Authors hold total lipid+EA mass approximately constant; EA amount is fully determined by PC:EA ratio. Empirically: D1(ratio=4)->100mg, D4(ratio=2)->166.7mg implies total ~500 mg."

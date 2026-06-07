@@ -1,0 +1,19 @@
+case,response,e02_model,e02_R2,e02_RMSE,db_ensemble_winner,db_CV_Q2_mean,db_CV_RMSE_mean,notes
+case1_sharma_2020,Y1 dissolution 1h (%),quadratic_full,0.9627,1.766,gbm,0.611,5.629,published main-effect equation diverges
+case1_sharma_2020,Y2 dissolution 5h (%),quadratic_full,0.9108,4.663,gbm,-0.050,14.758,
+case1_sharma_2020,Y3 dissolution 10h (%),quadratic_full,0.9520,4.611,gbm,-0.398,25.229,
+case1_sharma_2020,Y4 similarity factor,quadratic_full,0.8973,0.037,gbm,-0.398,0.192,
+case1b_akhtar_2024,TAM diss 30min (%),quadratic_full,0.9912,2.481,gp,0.897,8.429,X1 (HPMC) significant
+case1b_akhtar_2024,TAM diss 2h (%),quadratic_full,0.9919,2.028,gp,0.849,7.878,
+case1b_akhtar_2024,TAM diss 6h (%),quadratic_full,0.9458,5.434,gp,0.251,18.136,
+case1b_akhtar_2024,FIN diss 45min (%),quadratic_full,0.8800,8.144,gp,0.584,14.333,
+case2_arif_2022,Particle size (nm),Scheffe+mix*process,0.9077,27.93,gbm,0.857,30.155,published R2 0.9454
+case2_arif_2022,PDI,Scheffe+mix*process,0.9763,0.0066,gp,0.956,0.009,published R2 0.9775
+case2_arif_2022,EE (%),Scheffe+mix*process,0.9868,1.821,gp,0.988,1.577,published R2 0.9788
+case3_boscolo_2023,Particle size (nm),quadratic_full,0.9767,15.970,gbm,-0.788,70.332,X1+X3 significant; X2 (amp) not (matches published)
+case4_nemr_2022,PS (nm),mixed_OLS,0.9483,17.910,gp,0.234,54.856,EA categorical highly significant
+case4_nemr_2022,EE (%),mixed_OLS,0.3422,8.751,gp,0.341,8.608,weak fit (documented); differs from authors' DE-vii selection
+case4_nemr_2022,ZP (mV),mixed_OLS,,,gp,-2.280,15.764,D22 published anomaly +31.5 detected and dropped
+case4_nemr_2022,PDI,mixed_OLS,0.4113,0.083,gp,-0.799,0.126,weak fit (documented)
+case4_nemr_2022,Q2h (%),mixed_OLS,0.9556,0.786,gp,0.154,3.203,
+case4_nemr_2022,Q24h (%),mixed_OLS,0.9214,1.571,gp,0.040,5.260,

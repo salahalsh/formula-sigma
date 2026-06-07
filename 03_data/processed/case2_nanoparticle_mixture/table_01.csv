@@ -1,0 +1,8 @@
+Independent Variables,Lower Level,Upper Level
+Factor 1 (A+B),A = solid lipid,65%,95%
+,B = liquid lipid,5%,35%
+Factor 2,C = surfactant,2%,5%
+Dependent variables,Constraints
+Response 1,Particle size (nm),Minimum
+Response 2,PDI,In range (0.2–0.25)
+Response 3,Entrapment efficiency (%),In range (85–95%)

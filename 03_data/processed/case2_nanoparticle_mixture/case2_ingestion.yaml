@@ -1,0 +1,57 @@
+# case2_ingestion.yaml - Arif 2022 D-optimal combined mixture-process
+case_id: case2_nanoparticle_mixture
+design_family: d_optimal_combined_mixture_process
+software_used_by_authors: Design Expert v13 (Stat-Ease)
+runs: 22
+
+factors:
+  mixture_components:
+    - name: precirol_pct
+      type: mixture
+      low: 65
+      high: 95
+    - name: labrasol_pct
+      type: mixture
+      low: 5
+      high: 35
+    # Constraint: precirol_pct + labrasol_pct = 100
+  process:
+    - name: surfactant_pct
+      type: numeric
+      low: 2
+      high: 5
+
+constraints:
+  - "precirol_pct + labrasol_pct == 100"
+
+responses:
+  - name: particle_size_nm
+    goal: minimise
+    spec_range_observed: [65.4, 387.2]
+  - name: pdi
+    goal: in_range
+    spec_range: [0.2, 0.25]
+    spec_range_observed: [0.213, 0.351]
+  - name: ee_pct
+    goal: in_range
+    spec_range: [85, 95]
+    spec_range_observed: [49.0, 93.5]
+
+design_csv: case2_design.csv
+responses_csv: case2_responses.csv
+known_optimum_csv: case2_known_optimum.csv
+
+published_anova_R2:
+  particle_size: 0.9454
+  pdi:           0.9775
+  ee_pct:        0.9788
+
+responses_status: CLEAN
+
+e02_reproduction_scope:
+  available_now:
+    - full coefficient reproduction vs Design Expert v13
+    - desirability optimum vs published (80.55/19.45/5%)
+    - true Pareto front over (PS, PDI, EE)
+    - BO in combined mixture-process space - THE flagship demo here
+    - robust optimisation under supplier variability

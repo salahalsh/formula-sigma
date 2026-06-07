@@ -1,0 +1,7 @@
+Independent Variables,Levels
+Low,High
+X 1 =Osmogen Conc. (%),5,15
+X 2 =Orifice Size (mm),0.2,0.8
+X 3 =Tablet weight gain after coating (%),4,12
+Dependent Value,Constraints
+Y 1 = Cumulative % drug Release in 1hr. Y 2 = Cumulative % drug Release in 6hrs. Y 3 = Cumulative % drug Release in12hrs. Y 4 = r 2 (RSQ Zero),0%<Y1<20% 50%<Y2<60% 85%<Y3<100% Y4Maximum (>0.9)

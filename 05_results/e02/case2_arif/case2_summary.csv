@@ -1,0 +1,4 @@
+response,model,n_used,R2_ours,R2_published,R2_match,RMSE,n_terms
+PS,Scheffe + mix*process,22,0.9077,0.9454,Y,27.9306,5
+PDI,Scheffe + mix*process,22,0.9763,0.9775,Y,0.0066,5
+EE,Scheffe + mix*process,22,0.9868,0.9788,Y,1.8210,5

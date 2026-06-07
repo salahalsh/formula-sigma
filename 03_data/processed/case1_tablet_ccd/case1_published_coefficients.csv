@@ -1,0 +1,17 @@
+entry,value,source
+p_value_Y1,0.0010,T4
+p_value_Y2,0.0004,T4
+p_value_Y3,0.0094,T4
+p_value_Y4,0.0398,T4
+heading_block,The regression coefficient of applied constraints,T4
+equation_fragment,Y 1 =20.3379 + 0.493808 * X1 + 11.4995 * X2 + −2.02491 * X3 Y 2 =25.1651 + 2.38424 * X1 + 28.0141 * X2 + −2.58589 * X3 Y 3 =49.6625 + 3.3092 * X1 + 36.606 * X2 + −3.00681 * X3 Y 4 =0.493169 + −0.0388303 * X1 + 2.33354 * X2 + −0.0129157 * X3 + −0.00824167 * X1 * X2 + 0.00276812 * X1 * X3 + 0.0155729 * X2 * X3 + 0.000998447 * X1^2 + −2.1592X2^2+ −0.000213218 * X3^2,T4
+equation_Y1,"%CDR at1 hrs.,",T4 raw
+equation_Y2,"%CDR at 6 hrs.,",T4 raw
+equation_Y3,%CDR at 12 hrs. and,T4 raw
+equation_Y1,Cumulative % drug Release in 1hr.,T4 raw
+equation_Y2,Cumulative % drug Release in 6hrs.,T4 raw
+equation_Y3,Cumulative % drug Release in12hrs.,T4 raw
+equation_Y1,20.3379 + 0.493808 * X1 + 11.4995 * X2 + −2.02491 * X3,T4 raw
+equation_Y2,25.1651 + 2.38424 * X1 + 28.0141 * X2 + −2.58589 * X3,T4 raw
+equation_Y3,49.6625 + 3.3092 * X1 + 36.606 * X2 + −3.00681 * X3,T4 raw
+equation_Y4,0.493169 + −0.0388303 * X1 + 2.33354 * X2 + −0.0129157 * X3 + −0.00824167 * X1 * X2 + 0.00276812 * X1 * X3 + 0.0155729 * X2 * X3 + 0.000998447 * X1^2 + −2.1592X2^2+ −0.000213218 * X3^2,T4 raw

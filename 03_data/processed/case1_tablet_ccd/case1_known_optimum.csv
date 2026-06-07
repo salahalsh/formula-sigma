@@ -1,0 +1,24 @@
+parameter,value,source
+T6_row,Formulation,X 1,X 2,X 3,Responses,Predicted Values a,Experimental Values b,% Error
+T6_row,Y 1,17.73,18.014,1.60
+T6_row,A,13.308,0.603,7.96,Y 2,53.235,52.87,−0.68
+T6_row,Y 3,91.886,95.18,−3.5
+T6_row,Y 4,0.9604,0.9703,1.03
+T6_row,Y 1,18.260,17.943,−1.73
+T6_row,B,14.940,0.458,7.270,Y 2,54.812,53.57,−2.26
+T6_row,Y 3,94.001,93.087,−0.9
+T6_row,Y 4,0.943,0.9648,2.3
+T6_row,Y 1,15.901,16.194,1.84
+T6_row,C,11.768,0.546,6.581,Y 2,51.509,51.419,−0.17
+T6_row,Y 3,88.816,86.458,−2.65
+T6_row,Y 4,0.928,0.952,2.58
+T7_row,Ingredients,Quantity (mg)
+T7_row,MCP,30
+T7_row,NaCl,26.6
+T7_row,Aerosil,3
+T7_row,Magnesium Stearate,4
+T7_row,Avicel pH 101,136.4
+T7_row,Tablet weight,203.3
+T7_row,Orifice Size,0.6mm
+T7_row,Tablet Coating Composition Opadry ® CA
+T7_row,Tablet Weight gain,7.96% (Tablet weight 219.1 mg)

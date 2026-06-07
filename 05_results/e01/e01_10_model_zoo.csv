@@ -1,0 +1,13 @@
+model_family,n_obs,n_params,R2,RMSE,passes_R2_above_0.5
+linear,20,4,0.7538,1.2298,True
+rsm,20,10,0.9998,0.0341,True
+scheffe,20,0,n/a (not a mixture),n/a,skip
+sparse_rsm,20,8,0.9996,0.0477,True
+pls,20,3,0.7538,1.2298,True
+bayes_ridge,20,10,0.9998,0.0341,True
+gp,20,4,0.9999,0.0187,True
+rf,20,200,0.9646,0.4661,True
+gbm,20,200,0.9999,0.0199,True
+mlp,20,673,0.9974,0.1260,True
+ngboost,20,200,0.9999,0.0187,True
+ensemble (rsm+rf+gbm+gp),20,414,0.9999,0.0224,True

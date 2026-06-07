@@ -1,0 +1,16 @@
+note,stability_data_is_for_OPTIMUM_only_not_per_BBD_run
+raw_T5_row,Lyophilized Nanosuspension
+raw_T5_row,TIME (Days),25 °C,4 °C
+raw_T5_row,Particle Size * (nm),PDI *,Z Potential * (mV),Particle Size * (nm),PDI *,Z Potential * (mV)
+raw_T5_row,0,522.0 ± 7.11,0.204 ± 0.021,−4.43 ± 0.21,459.6 ± 1.13,0.232 ± 0.011,−3.01 ± 0.03
+raw_T5_row,7,507.4 ± 0.71,0.182 ± 0.020,−3.28 ± 0.21,466.2 ± 1.84,0.171 ± 0.004,−3.79 ± 0.08
+raw_T5_row,14,497.4 ± 5.81,0.212 ± 0.001,−3.58 ± 0.16,491.4 ± 4.24,0.206 ± 0.004,−4.14 ± 0.12
+raw_T5_row,30,525.5 ± 6.36,0.177 ± 0.022,−2.21 ± 0.15,487.7 ± 1.98,0.207 ± 0.004,−3.09 ± 0.08
+raw_T5_row,60,458.6 ± 8.14,0.212 ± 0.010,−4.30 ± 0.17,426.0 ± 2.63,0.235 ± 0.016,−3.70 ± 0.23
+raw_T6_row,Lyophilized Nanosuspension
+raw_T6_row,TIME (Days),4 °C (%),25 °C (%)
+raw_T6_row,0,100.0 (1.98),100.0 (1.95)
+raw_T6_row,7,103.9 (1.03),100.0 (1.98)
+raw_T6_row,14,105.3 (1.07),100.0 (0.30)
+raw_T6_row,30,100.0 (0.57),102.6 (2.00)
+raw_T6_row,60,107.9 (0.63),103.8 (0.50)

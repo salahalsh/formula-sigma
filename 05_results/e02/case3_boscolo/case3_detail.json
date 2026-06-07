@@ -1,0 +1,19 @@
+{
+  "n_runs": 15,
+  "centre_point_runs": 0,
+  "centre_point_sigma_PS": NaN,
+  "linear_model_coefficients": {
+    "const": 449.1855513307985,
+    "X1": 114.64959489712507,
+    "X2": -20.051339682314072,
+    "X3": -31.470498560818783
+  },
+  "reduced_model_coefficients": {
+    "const": 453.24130434782614,
+    "X1": 114.76330759853718,
+    "X3": -31.356785859406656
+  },
+  "matches_published_finding_X2_not_significant": true,
+  "matches_published_finding_X1_significant": true,
+  "matches_published_finding_X3_significant": false
+}

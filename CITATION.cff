@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software or the case datasets, please cite the paper below."
+title: "FORMULA-Sigma validation harness and case datasets"
+type: software
+authors:
+  - family-names: Alshehade
+    given-names: Salah
+    email: alshehade.s@gmail.com
+repository-code: "https://github.com/salahalsh/formula-sigma"
+license: MIT
+preferred-citation:
+  type: article
+  title: "FORMULA-Sigma: a unified web platform integrating classical DoE, mixture experiments, machine-learning surrogates, and probabilistic design space for pharmaceutical formulation"
+  authors:
+    - family-names: Alshehade
+      given-names: Salah
+  journal: "International Journal of Pharmaceutics"
+  year: 2026
+  notes: "Under review. DOI to be added on publication."

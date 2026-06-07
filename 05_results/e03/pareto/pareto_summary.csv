@@ -1,0 +1,7 @@
+metric,value
+test_problem,ZDT1 (n=6)
+n_pareto_points,80
+hypervolume_observed,0.8685
+hypervolume_true_front,0.87408
+hypervolume_ratio,0.99361
+passes_at_0.95,True

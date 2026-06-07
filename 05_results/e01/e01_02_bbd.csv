@@ -1,0 +1,8 @@
+metric,value
+design,Box-Behnken 3F
+n_runs,15
+design_matrices_equal_setwise,True
+fit_R2,0.99995225
+fit_RMSE,0.012205
+max_rel_coef_diff_sm_vs_numpy,2.406987547885096e-13
+passes_1e-6,True

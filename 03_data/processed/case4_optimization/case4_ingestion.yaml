@@ -1,0 +1,93 @@
+# case4_ingestion.yaml - Nemr 2022 D-optimal ocular bilosomes
+case_id: case4_optimization
+design_family: d_optimal_response_surface
+software_used_by_authors: Design-Expert vii (Stat-Ease)
+runs: 22
+
+factors:
+  independent:
+    - name: pc_ea_ratio
+      type: numeric
+      low: 2
+      high: 4
+    - name: ha_pct
+      type: numeric
+      low: 0
+      high: 0.5
+    - name: ea_type
+      type: categorical
+      levels: ["SC", "SDC", "STC"]
+
+derived_columns:                       # CRITICAL: do not treat as independent factor
+  - name: ea_amount_mg
+    formula: "total_mass / (1 + pc_ea_ratio)"
+    must_not_appear_as_factor: true
+    documented_in: case4_derived_columns.csv
+
+responses:                             # CORRECTED 2026-05-27: 6 not 4
+  - name: ee_pct
+    goal: maximise
+  - name: ps_nm
+    goal: minimise
+  - name: zp_mV
+    goal: measured             # not optimised in original paper
+  - name: pdi
+    goal: measured
+  - name: q2h_pct              # CORRECTED 2026-05-27: was Q1h in initial fact sheet
+    goal: minimise   # burst-release control
+  - name: q24h_pct
+    goal: maximise   # sustained-release
+
+design_csv: case4_design.csv
+responses_csv: case4_responses.csv
+known_optimum_csv: case4_known_optimum.csv
+
+responses_status: CLEAN
+
+ingestion_checks:
+  - assert: "pc_ea_ratio and ea_amount_mg are not BOTH used as factors in any FORMULA-Sigma fit"
+  - assert: "ea_type fitted as 3-level categorical, not encoded as 1/2/3 numeric"
+
+data_anomalies:
+  - run: D22
+    field: zp_mV
+    published_value: "+31.50"
+    suspected_true_value: "-31.50"
+    severity: low
+    reasoning: |
+      All 21 other formulations show zp_mV in [-24.4, -44.2] (negative
+      range expected for HA-coated bilosomes). D22 alone shows +31.50.
+      D22 has identical input factors to D20 (PC:EA=2, EA_amount=166.7,
+      STC, HA=0%) but D20's zp_mV is -26.10. Most likely cause: lost
+      negative sign during journal typesetting.
+      e02 reproduction should either (a) use -31.50 with a footnote,
+      or (b) exclude D22 zp_mV from fit (zp is not in the desirability
+      optimisation anyway).
+  - run: D11
+    field: ha_pct
+    published_value: "2.80"
+    suspected_true_value: "0.28"
+    severity: medium
+    caught_by: BENCHMARKING_CROSS_CHECK.md (FORMULA-Sigma envelope check)
+    reasoning: |
+      Paper declares HA% range as [0, 0.5]. All 21 other formulations
+      have HA% in {0, 0.08, 0.21, 0.25, 0.29, 0.50}. D11 alone has
+      HA% = 2.80, which is 5.6x the declared upper bound.
+      Almost certainly a published typo: "0.28" misprinted as "2.80"
+      during journal typesetting. The value 0.28 would fit naturally
+      between D10/D17 (both 0.29) as a near-axial design point.
+      Surfaced by the cross-check on 2026-05-28; no prior verification
+      pass had caught it because the L1 verifier only confirmed run
+      counts and table presence, not factor-envelope consistency.
+      e02 reproduction should either (a) use 0.28 with a footnote, or
+      (b) exclude D11 from fit. Treating 2.80 as-is would distort the
+      D-optimal information matrix.
+
+e02_reproduction_scope:
+  available_now:
+    - full coefficient reproduction vs Design-Expert vii
+    - desirability optimum vs published OB formula
+    - 4-objective Pareto over EE/PS/Q2h/Q24h (burst-vs-sustained trade-off)
+    - categorical-factor D-optimal demonstration (Table 1 differentiator)
+    - robust optimum under PC:EA supplier variability
+    - probabilistic ocular design space

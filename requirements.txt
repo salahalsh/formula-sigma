@@ -1,0 +1,12 @@
+numpy>=2.0,<3
+pandas>=2.0
+scipy>=1.10
+statsmodels>=0.14
+scikit-learn>=1.5
+matplotlib>=3.7
+seaborn>=0.13
+pyDOE3>=2.0
+scikit-optimize>=0.10
+pymoo>=0.6
+ngboost>=0.5
+pyyaml>=6.0

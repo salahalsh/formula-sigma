@@ -1,0 +1,7 @@
+metric,value
+n_candidates,125
+n_runs_selected,12
+det_d_optimal,18213552.0
+det_random_median,486.70421552658024
+det_ratio_dopt_over_random,37422.22
+passes_at_3x_ratio,True

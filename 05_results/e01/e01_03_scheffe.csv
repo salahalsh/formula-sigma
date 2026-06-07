@@ -1,0 +1,9 @@
+metric,value
+design,"Scheffe simplex-lattice {3,3}"
+n_runs_observed,10
+n_runs_expected_combinatorial,10
+row_sums_eq_one,True
+fit_R2,0.99999883
+fit_RMSE,0.005634
+max_rel_coef_diff_ours_vs_numpy,2.233854304101381e-14
+passes_1e-6,True

@@ -1,0 +1,9 @@
+{
+  "test_problem": "ZDT1",
+  "n_var": 6,
+  "n_pareto_points": 80,
+  "hypervolume_observed": 0.8684995519801908,
+  "hypervolume_true": 0.8740811024274797,
+  "hypervolume_ratio": 0.9936143792243215,
+  "passes_at_0.95": true
+}

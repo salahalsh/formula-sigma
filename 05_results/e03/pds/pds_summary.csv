@@ -1,0 +1,15 @@
+metric,value
+n_design_pts,13
+fit_R2,0.9774
+residual_sigma,0.4662
+spec_low,3.0
+spec_high,7.0
+analytical_mu_low_for_0.95_prob,3.8269
+analytical_mu_high_for_0.95_prob,6.1731
+analytic_region_size,2034
+recovered_region_size,2484
+hausdorff_distance_grid_units,0.5773
+intersection_cells,2032
+union_cells,2486
+jaccard_similarity,0.8174
+passes_at_0.80_jaccard,True

@@ -1,0 +1,76 @@
+# case1_ingestion.yaml - Sharma 2020 CCD osmotic pump CR tablet
+case_id: case1_tablet_ccd
+case_paper: Sharma N et al. 2020, Drug Design Development and Therapy
+doi: 10.2147/DDDT.S281992
+pmc: PMC7705261
+xml_source: source/sharma_2020_dddt_pmc.xml
+
+design_family: central_composite_rotatable
+software_used_by_authors: Design-Expert (Stat-Ease) per text
+runs: 20
+alpha: 1.682            # rotatable CCD
+center_points: 6        # F-3, F-6, F-10, F-12, F-16, F-17 (all coded 0/0/0)
+
+factors:
+  - name: X1_osmogen_pct
+    type: numeric
+    coded_levels: [-1.682, -1, 0, 1, 1.682]
+    actual_levels: [1.59, 5, 10, 15, 18.40]
+  - name: X2_coating_mm
+    type: numeric
+    coded_levels: [-1.682, -1, 0, 1, 1.682]
+    actual_levels: [-0.004, 0.2, 0.5, 0.8, 1.00]
+    notes: "F-19 has X2_coded = -1.682 producing physically impossible -0.004 mm; all responses zero. Outlier candidate."
+  - name: X3_pore_former_pct
+    type: numeric
+    coded_levels: [-1.682, -1, 0, 1, 1.682]
+    actual_levels: [1.27, 4, 8, 12, 14.72]
+
+responses:
+  - name: Y1_pct
+    p_value_published: 0.0010
+    goal: target           # cumulative release at early timepoint - controlled-target
+  - name: Y2_pct
+    p_value_published: 0.0004
+    goal: target
+  - name: Y3_pct
+    p_value_published: 0.0094
+    goal: maximise         # cumulative release at late timepoint
+  - name: Y4
+    p_value_published: 0.0398
+    goal: maximise         # similarity factor or release index per paper
+
+design_csv: case1_design.csv
+responses_csv: case1_responses.csv
+design_and_responses_csv: case1_design_and_responses.csv
+release_kinetics_csv: case1_release_kinetics.csv
+published_coefficients_csv: case1_published_coefficients.csv
+known_optimum_csv: case1_known_optimum.csv
+
+responses_status: CLEAN
+notable_features:
+  - "Published numerical regression equations (T4) enable digit-level cross-tool validation"
+  - "6 center-point replicates quantify pure process noise for PDS"
+  - "F-19 outlier offers natural outlier-detection sub-figure"
+
+data_anomalies:
+  - run: F-19
+    fields: ["Y1_pct", "Y2_pct", "Y3_pct", "Y4"]
+    published_value: 0
+    reasoning: |
+      X2_coded = -1.682 maps to actual coating thickness of -0.004 mm, which
+      is physically impossible. The authors include this row with all four
+      responses = 0. FORMULA-Sigma should either (a) flag and exclude during
+      surface fit, or (b) fit including the row and demonstrate that
+      built-in outlier detection identifies it as the highest-leverage point.
+      Option (b) is the more interesting demo for Section 3.2.1.
+
+e02_reproduction_scope:
+  available_now:
+    - reproduce CCD design + all 4 response surfaces
+    - DIRECT NUMERICAL comparison of FORMULA-Sigma coefficients vs T4 published equations
+    - 4-objective Pareto over Y1/Y2/Y3/Y4 (true multi-objective, no scalar collapse)
+    - probabilistic design space using 6 center-replicate variance
+    - BO demonstration over a larger axial region (alpha=1.682 vs Kotamarthy's 1.287)
+    - outlier-detection sub-demo on F-19
+    - desirability optimum verification against F-A published optimum

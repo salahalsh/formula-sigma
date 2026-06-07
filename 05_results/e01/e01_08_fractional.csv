@@ -1,0 +1,9 @@
+metric,value
+design,2^(4-1)_IV (d=abc)
+n_runs,8
+n_factors,4
+levels_are_pm1,True
+balanced,True
+orthogonal,True
+d_aliased_with_abc,True
+passes_all,True

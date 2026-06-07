@@ -1,0 +1,5 @@
+response,model,n_used,R2,RMSE,fx_at_FA_predicted,fx_at_FA_observed,fx_pct_err_vs_observed,passes_5pct
+Y1,quadratic_full,19,0.9627,1.766,12.887,18.014,-28.46%,False
+Y2,quadratic_full,19,0.9108,4.663,48.010,52.870,-9.19%,False
+Y3,quadratic_full,19,0.9520,4.611,88.252,95.180,-7.28%,False
+Y4,quadratic_full,19,0.8973,0.037,0.933,0.970,-3.84%,True

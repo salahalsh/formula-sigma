@@ -1,0 +1,10 @@
+{
+  "design": "Plackett-Burman 11F",
+  "n_runs": 12,
+  "n_factors": 11,
+  "runs_divisible_by_4": true,
+  "levels_are_pm1": true,
+  "balanced": true,
+  "orthogonal": true,
+  "passes_all": true
+}

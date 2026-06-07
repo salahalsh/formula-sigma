@@ -1,0 +1,4 @@
+case,expected_runs,ours_runs,pyDOE3_runs,ours_unique_per_factor,set_equal,passes
+3F-3L,27,27,27,"[3, 3, 3]",True,True
+2F-5L,25,25,25,"[5, 5]",True,True
+4F-2L,16,16,16,"[2, 2, 2, 2]",True,True

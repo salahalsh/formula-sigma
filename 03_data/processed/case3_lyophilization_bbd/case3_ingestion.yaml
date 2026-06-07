@@ -1,0 +1,59 @@
+# case3_ingestion.yaml - Boscolo 2023 BBD nanosuspension + lyophilisation
+case_id: case3_lyophilization_bbd
+design_family: box_behnken_design
+software_used_by_authors: Matlab R2017a custom algorithm
+runs: 15
+
+factors:
+  - name: stabilizer_pct
+    type: numeric
+    low: 0.3
+    medium: 0.5
+    high: 1.0
+  - name: amplitude_W
+    type: numeric
+    low: 30
+    medium: 50
+    high: 100
+  - name: sonication_time_min
+    type: numeric
+    low: 3                # CORRECTED 2026-05-27: not 1
+    medium: 5
+    high: 10              # CORRECTED 2026-05-27: not 5
+
+center_points: ["N13", "N14", "N15"]
+design_csv: case3_design.csv
+
+responses_in_BBD:
+  - name: particle_size_nm
+    goal: minimise
+    spec_range_observed: [333.4, 694.7]
+
+responses_status: SINGLE_CQA_ONLY
+note: |
+  T5 and T6 contain stability time-series for the OPTIMUM ONLY, not per-run.
+  The original "joint PDS over PS+PDI+Sf/Si" plan from the fact sheet was
+  over-optimistic - per-run PDI/Sf/Si data does not exist in this dataset.
+
+  REVISED add-value angle:
+   (a) PDS over the single-response BBD surface, using triplicate variance
+       at center points (N13/N14/N15 = 411.2, 413.1, 403.8 nm) to quantify
+       process noise. THIS IS STILL A VALID UNIVARIATE PDS DEMO.
+   (b) Use stability time-series as a separate sub-demo: FORMULA-Sigma
+       projects 60-day stability based on first 14-day data, validate
+       against published 30-60 day measurements.
+   (c) Robust optimisation under HPMC batch variability (synthetic noise
+       added to stabilizer_pct).
+
+published_model: "linear: Y = beta0 + beta1*X1 + beta3*X3 (X2 amplitude not significant)"
+known_optimum_csv: case3_known_optimum.csv
+stability_timeseries_csv: case3_stability_timeseries.csv
+
+e02_reproduction_scope:
+  available_now:
+    - reproduce BBD design + PS fit
+    - compare significance: X1 + X3 significant, X2 not (matches paper)
+    - univariate PDS over PS surface
+    - 60-day stability projection from 14-day window (separate sub-demo)
+  blocked:
+    - multivariate joint PDS over PS+PDI+Sf/Si (data simply does not exist)

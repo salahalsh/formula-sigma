@@ -1,0 +1,7 @@
+test_function,n_dim,budget,method,median_simple_regret_at_budget,iqr_simple_regret_at_budget
+Branin,2,30,BO,0.0011,0.0040
+Branin,2,30,RAND,0.8543,0.7337
+Hartmann-6,6,80,BO,0.0077,0.1170
+Hartmann-6,6,80,RAND,1.2427,0.5709
+Ackley-4,4,60,BO,1.0957,0.3749
+Ackley-4,4,60,RAND,3.2744,1.0762

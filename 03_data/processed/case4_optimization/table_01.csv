@@ -1,0 +1,9 @@
+Independent variables (Factors),Lowest level,,Highest level
+PC: EA ratio,2,,4
+HA%,0,,0.5
+Type of EA,SC,SDC,STC
+Dependent variables (responses),,Constraints,
+EE%,,Maximize,
+PS (nm),,Minimize,
+Q 2h,,Minimize,
+Q 24h,,Maximize,

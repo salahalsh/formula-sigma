@@ -1,0 +1,7 @@
+,,Levels
+Independent Variables,Low (−1),Medium (0),High (+1)
+X 1,Stabilizer (%),0.3,0.5,1.0
+X 2,Amplitude (W),30,50,100
+X 3,Sonication time (min),3,5,10
+Dependent variable,Constraints
+Y 1,Particle size (nm),Minimize

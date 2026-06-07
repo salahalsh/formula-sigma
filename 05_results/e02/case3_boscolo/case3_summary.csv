@@ -1,0 +1,4 @@
+model,n_terms,R2,RMSE,X1_p,X2_p,X3_p
+full_quadratic,9.0,0.9767,15.970,0.0004,0.0423,0.0104
+linear_X1_X2_X3,3,0.7720,49.956,0.0001,0.3328,0.1402
+linear_X1_X3_only (published),2,0.7508,52.234,0.0001,dropped,0.1395

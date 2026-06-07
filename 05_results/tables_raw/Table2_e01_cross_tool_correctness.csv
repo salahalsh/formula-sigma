@@ -1,0 +1,10 @@
+design,n_runs,fit_R2,max_rel_coef_diff,passes
+"Central composite (3F, rotatable)",20,0.999813,4.95e-15,True
+Box-Behnken (3F),15,0.999952,2.41e-13,True
+"Scheffe simplex-lattice {3,3}",10,0.999999,2.23e-14,True
+Plackett-Burman (11F),12,n/a,n/a,True
+"Latin hypercube (50, 4)",n/a,n/a,n/a,True
+Full factorial (multi-level),n/a,n/a,n/a,n/a
+Fractional factorial 2^(4-1)_IV,8,n/a,n/a,True
+D-optimal (Fedorov exchange),n/a,n/a,n/a,True
+Model zoo (11 families + ensemble),20 (CCD),max 0.9999,"model-fit, n/a",10/11

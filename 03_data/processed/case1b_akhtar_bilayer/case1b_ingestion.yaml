@@ -1,0 +1,106 @@
+# case1b_ingestion.yaml - Akhtar 2024 bilayer SR+IR tablet (supporting mini-case)
+case_id: case1b_akhtar_bilayer
+case_paper: Akhtar M et al. 2024, Saudi Pharmaceutical Journal
+doi: 10.1016/j.jsps.2024.101957
+pmc: PMC10837631
+xml_source: source/akhtar_2024_saudi_pj_pmc.xml
+
+role: supporting_minicase
+manuscript_target: "Section 3.2.5 or Supplementary S2"
+purpose: |
+  Demonstrate FORMULA-Sigma on bilayer / coupled-design problems
+  where two separate but interrelated CCDs must be optimised together
+  (inner sustained-release layer + outer immediate-release coat).
+
+design_family: bilayer_dual_central_composite_rotatable
+software_used_by_authors: Design-Expert (commercial CCD per text)
+total_runs_in_design_matrix: 10 paired (TAM, FIN)
+estimated_alpha_inner_tam: 1.414           # sqrt(2), 2-factor rotatable
+estimated_alpha_outer_fin: depends on Triacetin / Talc range
+
+# ---------- Inner TAM layer ----------
+tam_layer:
+  factors:
+    - name: hpmc_k100m_pct
+      type: numeric
+      range_observed: [15.86, 44.14]
+      center: 30
+    - name: avicel_ph102_pct
+      type: numeric
+      range_observed: [6.72, 63.28]
+      center: 35
+  responses:
+    - name: drug_content_pct
+      goal: in_range (~100 +/- 5)
+    - name: dissolution_30min_pct
+      goal: target          # <40% per pharmacopoeial spec for SR layer
+      target: "<40"
+    - name: dissolution_2h_pct
+      goal: in_range
+      target: "20-60"
+    - name: dissolution_6h_pct
+      goal: maximise
+      target: ">75"
+    - name: tablet_thickness_mm
+      goal: monitored
+    - name: tablet_hardness_kp
+      goal: monitored
+  design_csv: case1b_tam_design.csv
+  responses_csv: case1b_tam_responses.csv
+
+# ---------- Outer FIN layer (drug coat) ----------
+fin_layer:
+  factors:
+    - name: triacetin_pct      # plasticizer
+      type: numeric
+      range_observed: [0.56, 1.54]
+      center: 1.05
+    - name: talc_pct           # lubricant
+      type: numeric
+      range_observed: [0.29, 1.71]
+      center: 1.0
+  responses:
+    - name: drug_content_pct
+      goal: in_range (~100 +/- 5)
+    - name: dissolution_45min_pct
+      goal: maximise          # IR specification
+  design_csv: case1b_fin_design.csv
+  responses_csv: case1b_fin_responses.csv
+
+# Supporting per-run data
+weight_variation_csv: case1b_weight_variation.csv
+thickness_hardness_csv: case1b_thickness_hardness.csv
+release_kinetics_csv: case1b_release_kinetics.csv
+anova_csv: case1b_anova_tam_30min.csv
+known_optimum_csv: case1b_known_optimum.csv
+
+responses_status: CLEAN_WITH_DATA_GAPS
+
+data_gaps:
+  - "TF11 absent from T1 (drug content + dissolution); thickness/hardness present in T6"
+  - "TF1, TF2 absent from T5 (weight variation) and T6 (thickness, hardness)"
+  - "Notes: TF1, TF2 may be pre-design pilot batches not part of CCD"
+  - "T5 row for TF11 partially merged with FF9 (parser caveat)"
+
+# Reproduction scope for Section 3.2.5
+e02_reproduction_scope:
+  available_now:
+    - reproduce two separate rotatable CCDs (TAM + FIN) in FORMULA-Sigma
+    - fit per-layer responses and verify ANOVA (T8 published for TAM)
+    - desirability optimum vs published TF12 (inner) and FF10 (outer)
+    - DEMONSTRATE BILAYER-COUPLED OPTIMISATION:
+        joint Pareto front over (TAM dissolution 6h, FIN dissolution
+        45min, tablet hardness) - this is the unique Table 1
+        differentiator for FORMULA-Sigma (no commercial DoE tool
+        couples designs across layers automatically)
+    - probabilistic design space joint over both layers
+  blocked:
+    - full per-batch reproduction limited by data gaps (TF11, TF1/TF2)
+
+table_1_differentiator:
+  feature: "coupled multi-design optimisation"
+  rationale: |
+    Design-Expert, JMP Pro and Modde all optimise single designs.
+    Bilayer products are typically optimised layer-by-layer with manual
+    coupling. FORMULA-Sigma supports joint optimisation across
+    sequential design contexts via the unified workflow.

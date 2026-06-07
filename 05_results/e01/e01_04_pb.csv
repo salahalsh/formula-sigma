@@ -1,0 +1,9 @@
+metric,value
+design,Plackett-Burman 11F
+n_runs,12
+n_factors,11
+runs_divisible_by_4,True
+levels_are_pm1,True
+balanced (diag == n),True
+orthogonal (off-diag == 0),True
+passes_all,True

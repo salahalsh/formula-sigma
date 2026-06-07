@@ -1,0 +1,11 @@
+{
+  "design": "2^(4-1)_IV",
+  "generator": "d = abc",
+  "n_runs": 8,
+  "n_factors": 4,
+  "levels_are_pm1": true,
+  "balanced": true,
+  "orthogonal": true,
+  "d_aliased_with_abc": true,
+  "passes_all": true
+}

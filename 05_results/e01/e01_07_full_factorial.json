@@ -1,0 +1,38 @@
+{
+  "3F-3L": {
+    "expected": 27,
+    "ours": 27,
+    "pyDOE3": 27,
+    "set_equal": true,
+    "unique_levels_per_factor": [
+      3,
+      3,
+      3
+    ],
+    "passes": true
+  },
+  "2F-5L": {
+    "expected": 25,
+    "ours": 25,
+    "pyDOE3": 25,
+    "set_equal": true,
+    "unique_levels_per_factor": [
+      5,
+      5
+    ],
+    "passes": true
+  },
+  "4F-2L": {
+    "expected": 16,
+    "ours": 16,
+    "pyDOE3": 16,
+    "set_equal": true,
+    "unique_levels_per_factor": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "passes": true
+  }
+}

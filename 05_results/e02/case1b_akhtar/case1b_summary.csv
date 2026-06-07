@@ -1,0 +1,5 @@
+layer,response,n_used,R2,RMSE,p_X1,p_X2
+TAM_inner,TAM diss 30min,9,0.9912,2.481,0.0005,0.0736
+TAM_inner,TAM diss 2h,9,0.9919,2.028,0.0004,0.0540
+TAM_inner,TAM diss 6h,9,0.9458,5.434,0.0122,0.2307
+FIN_outer,FIN diss 45min,10,0.8800,8.144,0.0105,0.4016

@@ -1,0 +1,10 @@
+# Normalize all text to LF in the repository so shell scripts and Python
+# run correctly on Linux/macOS regardless of the contributor's OS.
+* text=auto eol=lf
+
+# Treat binary assets as binary (no line-ending conversion)
+*.png binary
+*.pdf binary
+*.tiff binary
+*.jpg binary
+*.jpeg binary

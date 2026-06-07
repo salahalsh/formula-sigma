@@ -1,0 +1,44 @@
+{
+  "experiment": "e02_case4_nemr",
+  "timestamp_utc": "2026-05-27T16:32:16.098175Z",
+  "python_version": "3.13.13 (tags/v3.13.13:01104ce, Apr  7 2026, 19:25:48) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "seed": 42,
+  "runtime_sec": 1.275,
+  "git_sha": "n/a",
+  "inputs": [
+    {
+      "path": "D:\\0. Research\\2026\\insilicosigma papers\\Formula-Sigma\\03_data\\processed\\case4_optimization\\case4_design.csv",
+      "sha256": "bebda92935f61ff319329e05318ac2e83df6a17c667f269f28d266aeaa04558e"
+    },
+    {
+      "path": "D:\\0. Research\\2026\\insilicosigma papers\\Formula-Sigma\\03_data\\processed\\case4_optimization\\case4_responses.csv",
+      "sha256": "615b1f5ba22e6597be6f476bd252ce29c0f5f3b7747424fd3839393c7763c4a3"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "D:\\0. Research\\2026\\insilicosigma papers\\Formula-Sigma\\05_results\\e02\\case4_nemr\\case4_summary.csv",
+      "sha256": "54b2540173c8640516ad9074310e7b021a230eec5d4dd66d942344c33ad2e963"
+    },
+    {
+      "path": "D:\\0. Research\\2026\\insilicosigma papers\\Formula-Sigma\\05_results\\e02\\case4_nemr\\case4_detail.json",
+      "sha256": "0b1d16441322ad5df27bd38f0bbf63638dd961543c47a7fa8f18c750178f05b5"
+    }
+  ],
+  "key_libs": {
+    "numpy": "2.1.3",
+    "pandas": "2.3.2",
+    "scipy": "1.14.1",
+    "statsmodels": "0.14.6",
+    "sklearn": "1.7.2",
+    "pyDOE3": "1.6.2",
+    "skopt": "0.10.2",
+    "pymoo": "0.6.1.6",
+    "matplotlib": "3.10.6",
+    "seaborn": "0.13.2"
+  },
+  "extra": {
+    "data_anomaly": "D22 ZP excluded only from ZP fit"
+  }
+}

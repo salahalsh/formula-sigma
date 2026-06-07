@@ -1,0 +1,19 @@
+{
+  "spec": [
+    3.0,
+    7.0
+  ],
+  "fit_R2": 0.9774035598751748,
+  "residual_sigma": 0.466175109882943,
+  "analytic_mu_window": [
+    3.8269134567283642,
+    6.173086543271635
+  ],
+  "n_analytic": 2034,
+  "n_recovered": 2484,
+  "hausdorff_grid_units": 0.5772673344381831,
+  "intersection_cells": 2032,
+  "union_cells": 2486,
+  "jaccard_similarity": 0.8173773129525342,
+  "passes_at_0.80_jaccard": true
+}

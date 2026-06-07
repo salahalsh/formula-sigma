@@ -1,0 +1,8 @@
+metric,value
+x_nominal,"(-0.000, -0.000)"
+y_nominal_noisefree,0.8
+y_at_nominal_under_noise,0.7355
+x_robust,"(0.024, -0.021)"
+y_robust_expected_under_noise,0.7422
+robust_beats_nominal_under_noise,True
+expected_gain,0.0067

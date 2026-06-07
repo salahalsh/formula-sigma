@@ -1,0 +1,33 @@
+{
+  "experiment": "e01_08_fractional",
+  "timestamp_utc": "2026-05-27T17:15:44.176628Z",
+  "python_version": "3.13.13 (tags/v3.13.13:01104ce, Apr  7 2026, 19:25:48) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "seed": 42,
+  "runtime_sec": 1.722,
+  "git_sha": "n/a",
+  "inputs": [],
+  "outputs": [
+    {
+      "path": "D:\\0. Research\\2026\\insilicosigma papers\\Formula-Sigma\\05_results\\e01\\e01_08_fractional.csv",
+      "sha256": "9182aed0f251bcbf5a1a7face42aeb182a35d3201ab3bb87befa7b87c165020e"
+    },
+    {
+      "path": "D:\\0. Research\\2026\\insilicosigma papers\\Formula-Sigma\\05_results\\e01\\e01_08_fractional.json",
+      "sha256": "a9e61485bce5e337b6be94383ae75798d908571439394e40b30a24bac540a578"
+    }
+  ],
+  "key_libs": {
+    "numpy": "2.1.3",
+    "pandas": "2.3.2",
+    "scipy": "1.14.1",
+    "statsmodels": "0.14.6",
+    "sklearn": "1.7.2",
+    "pyDOE3": "1.6.2",
+    "skopt": "0.10.2",
+    "pymoo": "0.6.1.6",
+    "matplotlib": "3.10.6",
+    "seaborn": "0.13.2"
+  },
+  "extra": {}
+}

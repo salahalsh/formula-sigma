@@ -1,0 +1,81 @@
+{
+  "particle_size_nm": {
+    "model": "Scheffe quadratic + mix*process interactions",
+    "coefficients": {
+      "A_precirol": 421.86793215785156,
+      "B_labrasol": -199.35666131292328,
+      "A*B": -467.2534169060659,
+      "A*C": -20.422018348623823,
+      "B*C": 12.43221202854248
+    },
+    "p_values": {
+      "A_precirol": 4.623017691948111e-08,
+      "B_labrasol": 0.6578663763527214,
+      "A*B": 0.4952213782841758,
+      "A*C": 0.08129136603520494,
+      "B*C": 0.7447370728186553
+    },
+    "R2_ours": 0.9077379011473057,
+    "R2_published": 0.9454,
+    "RMSE": 27.93063199945152,
+    "passes_R2_match_5pct": true
+  },
+  "pdi": {
+    "model": "Scheffe quadratic + mix*process interactions",
+    "coefficients": {
+      "A_precirol": 0.4197533086864049,
+      "B_labrasol": 0.5753723850575339,
+      "A*B": -1.112144162966823,
+      "A*C": -0.015620795107033653,
+      "B*C": 0.02658103975535188
+    },
+    "p_values": {
+      "A_precirol": 4.200360627527846e-18,
+      "B_labrasol": 3.744358518617527e-05,
+      "A*B": 1.9873519935738687e-06,
+      "A*C": 1.3915194483626172e-05,
+      "B*C": 0.00801076512635371
+    },
+    "R2_ours": 0.9763132788946232,
+    "R2_published": 0.9775,
+    "RMSE": 0.0065819661810995415,
+    "passes_R2_match_5pct": true
+  },
+  "ee_pct": {
+    "model": "Scheffe quadratic + mix*process interactions",
+    "coefficients": {
+      "A_precirol": 88.93188582546021,
+      "B_labrasol": -359.4882692281557,
+      "A*B": 572.2764864629544,
+      "A*C": 0.1498470948012116,
+      "B*C": -7.324159021406601
+    },
+    "p_values": {
+      "A_precirol": 3.6869314094406e-16,
+      "B_labrasol": 5.601346450712893e-10,
+      "A*B": 2.621606306935136e-10,
+      "A*C": 0.8372689700211129,
+      "B*C": 0.008223149961941354
+    },
+    "R2_ours": 0.9868124654727732,
+    "R2_published": 0.9788,
+    "RMSE": 1.8210450309389403,
+    "passes_R2_match_5pct": true
+  },
+  "optimum_prediction": {
+    "x_at_optimum": [
+      0.8055,
+      0.1945,
+      5
+    ],
+    "predicted_particle_size_nm": 157.67592001314185,
+    "predicted_pdi": 0.23871917993311975,
+    "predicted_ee_pct": 84.85334425855532,
+    "published_predicted_PS": 157.9,
+    "published_predicted_PDI": 0.241,
+    "published_predicted_EE": 85,
+    "observed_PS": 152.0,
+    "observed_PDI": 0.23,
+    "observed_EE": 88.0
+  }
+}

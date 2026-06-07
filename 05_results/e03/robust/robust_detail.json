@@ -1,0 +1,19 @@
+{
+  "x_nominal": [
+    -2.1355589999647175e-09,
+    -7.560173701145063e-09
+  ],
+  "y_nominal_noisefree": 0.7999999999999999,
+  "y_at_nominal_under_noise": 0.7355018159063555,
+  "x_robust": [
+    0.023544983072260273,
+    -0.02068626356579739
+  ],
+  "y_robust_expected_under_noise": 0.7421662729989736,
+  "robust_beats_nominal_under_noise": true,
+  "expected_gain_robust_over_nominal": 0.006664457092618092,
+  "noise_sigma": [
+    0.15,
+    0.15
+  ]
+}
