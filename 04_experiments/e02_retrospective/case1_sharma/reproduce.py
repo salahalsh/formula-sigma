@@ -9,7 +9,7 @@ Honest reproduction strategy:
       (matches what the authors' R^2 values imply, even if their T4
       printed only first-order terms).
   (2) F-19 excluded as a published outlier (X2_coded = -1.682 ->
-      physically impossible -0.004 mm coating; all responses = 0).
+      physically impossible -0.004 mm orifice (no orifice); all responses = 0).
   (3) Validate by predicting at the F-A optimum (Table 6) and comparing
       to the experimentally-observed Y1..Y4 at F-A.
 

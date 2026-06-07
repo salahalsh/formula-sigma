@@ -1,11 +1,11 @@
 case,kind,name,formula_sigma,published,abs_err_pct,tolerance_band,interpretation
 case1_sharma_2020,factor,X1 osmogen (%),17.297,13.308,30.0,within 40%,FS optimum richer in osmogen
-case1_sharma_2020,factor,X2 coating (mm),0.991,0.603,64.3,beyond 40%,FS finds thicker coating - response surface broad in this dimension
-case1_sharma_2020,factor,X3 pore former (%),12.964,7.960,62.9,beyond 40%,FS optimum richer in pore former
-case1_sharma_2020,response,Y1 1h (%),10.578,17.730,40.3,beyond 30%,FS predicts slower release at FS optimum (consistent with thicker coating)
-case1_sharma_2020,response,Y2 5h (%),51.460,53.235,3.3,within 30%,
-case1_sharma_2020,response,Y3 10h (%),99.444,91.886,8.2,within 30%,
-case1_sharma_2020,response,Y4 similarity,0.994,0.960,3.5,within 30%,
+case1_sharma_2020,factor,X2 orifice size (mm),0.991,0.603,64.3,beyond 40%,FS finds larger orifice - response surface broad in this dimension
+case1_sharma_2020,factor,X3 coating weight gain (%),12.964,7.960,62.9,beyond 40%,FS optimum higher coating weight gain
+case1_sharma_2020,response,Y1 1h (%),10.578,17.730,40.3,beyond 30%,FS predicts slower release at FS optimum (consistent with higher coating weight gain)
+case1_sharma_2020,response,Y2 6h (%),51.460,53.235,3.3,within 30%,
+case1_sharma_2020,response,Y3 12h (%),99.444,91.886,8.2,within 30%,
+case1_sharma_2020,response,Y4 RSQ-zero,0.994,0.960,3.5,within 30%,
 case2_arif_2022,factor,Precirol (%),69.793,80.550,13.4,within 15%,
 case2_arif_2022,factor,Labrasol (%),23.255,19.450,19.6,beyond 15%,Constrained mixture - small absolute shift inside the simplex
 case2_arif_2022,factor,Surfactant (%),4.073,5.000,18.5,beyond 15%,

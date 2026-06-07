@@ -36,7 +36,7 @@ resp = pd.read_csv(CASE_DIR / "case1_responses.csv")
 df = design.merge(resp, on="run")
 
 # Exclude F-19 to match the e02 reproduction (and the manuscript): F-19 is the
-# alpha = -1.682 axial point on X2 which decodes to coating thickness = -0.004 mm
+# alpha = -1.682 axial point on X2 (orifice size) which decodes to -0.004 mm (no orifice)
 # (unphysical, all responses set to 0 in the published table). The same outlier
 # mask is applied in e02 case1_sharma/reproduce.py.
 df = df[df["run"].astype(str).str.strip() != "F-19"].reset_index(drop=True)
@@ -72,10 +72,10 @@ def yhat_fs(resp_name):
 
 fig, axes = plt.subplots(1, 4, figsize=(15.0, 4.4))
 responses = [
-    ("Y1_pct", "Y1: dissolution 1 h (%)"),
-    ("Y2_pct", "Y2: dissolution 5 h (%)"),
-    ("Y3_pct", "Y3: dissolution 10 h (%)"),
-    ("Y4",     "Y4: similarity factor"),
+    ("Y1_pct", "Y1: release 1 h (%)"),
+    ("Y2_pct", "Y2: release 6 h (%)"),
+    ("Y3_pct", "Y3: release 12 h (%)"),
+    ("Y4",     "Y4: RSQ-zero"),
 ]
 
 for ax, (rcol, label) in zip(axes, responses):

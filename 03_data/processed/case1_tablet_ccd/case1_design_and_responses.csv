@@ -1,4 +1,4 @@
-run,X1_coded,X2_coded,X3_coded,X1_osmogen_pct,X2_coating_mm,X3_pore_former_pct,Y1_pct,Y2_pct,Y3_pct,Y4
+run,X1_coded,X2_coded,X3_coded,X1_osmogen_pct,X2_orifice_mm,X3_weight_gain_pct,Y1_pct,Y2_pct,Y3_pct,Y4
 F-1,0.000,0.000,1.682,10,0.5,14.72,9.26,42.23,70.95,0.915
 F-2,1.000,1.000,−1.000,15,0.8,4,31.29,72.23,100,0.5946
 F-3,0.000,0.000,0.000,10,0.5,8,13.95,38.12,79.43,0.9498

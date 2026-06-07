@@ -16,12 +16,12 @@ factors:
     type: numeric
     coded_levels: [-1.682, -1, 0, 1, 1.682]
     actual_levels: [1.59, 5, 10, 15, 18.40]
-  - name: X2_coating_mm
+  - name: X2_orifice_mm
     type: numeric
     coded_levels: [-1.682, -1, 0, 1, 1.682]
     actual_levels: [-0.004, 0.2, 0.5, 0.8, 1.00]
-    notes: "F-19 has X2_coded = -1.682 producing physically impossible -0.004 mm; all responses zero. Outlier candidate."
-  - name: X3_pore_former_pct
+    notes: "F-19 has X2_coded = -1.682 producing physically impossible -0.004 mm orifice (no orifice); all responses zero. Outlier candidate."
+  - name: X3_weight_gain_pct
     type: numeric
     coded_levels: [-1.682, -1, 0, 1, 1.682]
     actual_levels: [1.27, 4, 8, 12, 14.72]
@@ -38,7 +38,7 @@ responses:
     goal: maximise         # cumulative release at late timepoint
   - name: Y4
     p_value_published: 0.0398
-    goal: maximise         # similarity factor or release index per paper
+    goal: maximise         # RSQ-zero: zero-order release-fit coefficient (per paper)
 
 design_csv: case1_design.csv
 responses_csv: case1_responses.csv
@@ -58,7 +58,7 @@ data_anomalies:
     fields: ["Y1_pct", "Y2_pct", "Y3_pct", "Y4"]
     published_value: 0
     reasoning: |
-      X2_coded = -1.682 maps to actual coating thickness of -0.004 mm, which
+      X2_coded = -1.682 maps to actual orifice size of -0.004 mm (no orifice), which
       is physically impossible. The authors include this row with all four
       responses = 0. FORMULA-Sigma should either (a) flag and exclude during
       surface fit, or (b) fit including the row and demonstrate that

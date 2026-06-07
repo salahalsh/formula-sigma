@@ -1,8 +1,8 @@
 case,response,e02_model,e02_R2,e02_RMSE,db_ensemble_winner,db_CV_Q2_mean,db_CV_RMSE_mean,notes
 case1_sharma_2020,Y1 dissolution 1h (%),quadratic_full,0.9627,1.766,gbm,0.611,5.629,published main-effect equation diverges
-case1_sharma_2020,Y2 dissolution 5h (%),quadratic_full,0.9108,4.663,gbm,-0.050,14.758,
-case1_sharma_2020,Y3 dissolution 10h (%),quadratic_full,0.9520,4.611,gbm,-0.398,25.229,
-case1_sharma_2020,Y4 similarity factor,quadratic_full,0.8973,0.037,gbm,-0.398,0.192,
+case1_sharma_2020,Y2 release 6h (%),quadratic_full,0.9108,4.663,gbm,-0.050,14.758,
+case1_sharma_2020,Y3 release 12h (%),quadratic_full,0.9520,4.611,gbm,-0.398,25.229,
+case1_sharma_2020,Y4 RSQ-zero,quadratic_full,0.8973,0.037,gbm,-0.398,0.192,
 case1b_akhtar_2024,TAM diss 30min (%),quadratic_full,0.9912,2.481,gp,0.897,8.429,X1 (HPMC) significant
 case1b_akhtar_2024,TAM diss 2h (%),quadratic_full,0.9919,2.028,gp,0.849,7.878,
 case1b_akhtar_2024,TAM diss 6h (%),quadratic_full,0.9458,5.434,gp,0.251,18.136,
